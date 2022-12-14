@@ -27,7 +27,8 @@ sudo systemctl restart apparmor
 
 Disable `nano` profile:
 ```bash
-sudo ln -s /etc/apparmor.d/usr.bin.nano /etc/apparmor.d/disable/usr.bin.nano
+sudo aa-disable /etc/apparmor.d/usr.bin.nano
+# sudo ln -s /etc/apparmor.d/usr.bin.nano /etc/apparmor.d/disable/usr.bin.nano
 ```
 
 Enable `nano` profile:
