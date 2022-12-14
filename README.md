@@ -25,6 +25,11 @@ Disable `nano` profile:
 sudo ln -s /etc/apparmor.d/usr.bin.nano /etc/apparmor.d/disable/usr.bin.nano
 ```
 
+Enable `nano` profile:
+```bash
+sudo rm /etc/apparmor.d/disable/usr.bin.nano
+```
+
 Reload apparmor config to kernal:
 ```bash
 sudo apparmor_parser -r /etc/apparmor.d/usr.bin.nano
