@@ -9,3 +9,8 @@ Check all the loaded profiles:
 ```bash
 sudo aa-status
 ```
+
+Install `aa-genprof` and other utility packages:
+```bash
+sudo apt install apparmor-utils
+```
