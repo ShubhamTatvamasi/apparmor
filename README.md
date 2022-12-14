@@ -19,3 +19,10 @@ Generate a profile for `nano` text editor:
 ```bash
 sudo aa-genprof nano
 ```
+
+Remove the `nano` profile:
+```bash
+sudo apparmor_parser -R /etc/apparmor.d/usr.bin.nano
+```
+
+
