@@ -14,3 +14,8 @@ Install `aa-genprof` and other utility packages:
 ```bash
 sudo apt install apparmor-utils
 ```
+
+Generate a profile for `nano` text editor: 
+```bash
+sudo aa-genprof nano
+```
