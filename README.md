@@ -20,6 +20,11 @@ Generate a profile for `nano` text editor:
 sudo aa-genprof nano
 ```
 
+Disable `nano` profile:
+```bash
+sudo ln -s /etc/apparmor.d/usr.bin.nano /etc/apparmor.d/disable/usr.bin.nano
+```
+
 Reload apparmor config to kernal:
 ```bash
 sudo apparmor_parser -r /etc/apparmor.d/usr.bin.nano
