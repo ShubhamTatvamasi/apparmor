@@ -35,6 +35,16 @@ Enable `nano` profile:
 sudo rm /etc/apparmor.d/disable/usr.bin.nano
 ```
 
+Move `nano` profile to complain mode:
+```bash
+sudo aa-complain /etc/apparmor.d/usr.bin.nano
+```
+
+Move `nano` profile to enforce mode:
+```bash
+sudo aa-enforce /etc/apparmor.d/usr.bin.nano
+```
+
 Reload apparmor config to kernal:
 ```bash
 sudo apparmor_parser -r /etc/apparmor.d/usr.bin.nano
